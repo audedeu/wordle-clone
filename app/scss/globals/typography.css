@@ -1,0 +1,19 @@
+@use '../utils' as *;
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 3.8rem;
+  letter-spacing: 0.2rem;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+/*# sourceMappingURL=typography.css.map */

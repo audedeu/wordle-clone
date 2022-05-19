@@ -1,0 +1,52 @@
+@use '../utils' as *;
+
+.game {
+	padding: 0;
+	max-width: 640px;
+	margin: 0 auto;
+
+	@include breakpoint(large) {
+		padding: 0;
+		transform: translate(0, 0);
+	}
+}
+
+/* define primary colors */
+$primary_1: #a5abac;
+$primary_2: #fff;
+
+
+.keyboard-container{
+	height: 200px;
+}
+
+
+	.keyboard-row {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		margin: 0 auto 8px;
+		touch-action: manipulation;
+	}	  
+	
+	button {
+		font-family: inherit;
+		font-weight: bold;
+		border: 0;
+		padding: 0;
+		height: 60px;
+		width: 60px;
+		background-color: $primary_1;
+		color: $primary_2;
+		flex-grow: 1;
+		text-transform: uppercase;
+		margin-right: 6px;
+		border-radius: 4px;
+		user-select: none;
+		cursor: pointer;
+
+	  }
+
+
+
+ 

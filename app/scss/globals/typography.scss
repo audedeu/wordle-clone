@@ -1,0 +1,15 @@
+@use '../utils' as *;
+
+
+h1 {
+  margin-top: 1;
+  line-height: 1.1;
+  font-size: 56px;
+  letter-spacing: 0.2rem;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}

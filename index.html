@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordle Clone - Inspired by TheCodercoder
+    </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/dist/style.css" />
+    <script defer src="/dist/script.js"></script>
+  </head>
+
+  <body>
+    <h1>Mot Mot Motus</h1>
+    <section class="game">
+      <div id="guess1" class="guess" data-letters="">
+        <div class="guess__tile" id="guess1Tile1"></div>
+        <div class="guess__tile" id="guess1Tile2"></div>
+        <div class="guess__tile" id="guess1Tile3"></div>
+        <div class="guess__tile" id="guess1Tile4"></div>
+        <div class="guess__tile" id="guess1Tile5"></div>
+      </div>
+      <div id="guess2" class="guess" data-letters="">
+        <div class="guess__tile" id="guess2Tile1"></div>
+        <div class="guess__tile" id="guess2Tile2"></div>
+        <div class="guess__tile" id="guess2Tile3"></div>
+        <div class="guess__tile" id="guess2Tile4"></div>
+        <div class="guess__tile" id="guess2Tile5"></div>
+      </div>
+      <div id="guess3" class="guess" data-letters="">
+        <div class="guess__tile" id="guess3Tile1"></div>
+        <div class="guess__tile" id="guess3Tile2"></div>
+        <div class="guess__tile" id="guess3Tile3"></div>
+        <div class="guess__tile" id="guess3Tile4"></div>
+        <div class="guess__tile" id="guess3Tile5"></div>
+      </div>
+      <div id="guess4" class="guess" data-letters="">
+        <div class="guess__tile" id="guess4Tile1"></div>
+        <div class="guess__tile" id="guess4Tile2"></div>
+        <div class="guess__tile" id="guess4Tile3"></div>
+        <div class="guess__tile" id="guess4Tile4"></div>
+        <div class="guess__tile" id="guess4Tile5"></div>
+      </div>
+      <div id="guess5" class="guess" data-letters="">
+        <div class="guess__tile" id="guess5Tile1"></div>
+        <div class="guess__tile" id="guess5Tile2"></div>
+        <div class="guess__tile" id="guess5Tile3"></div>
+        <div class="guess__tile" id="guess5Tile4"></div>
+        <div class="guess__tile" id="guess5Tile5"></div>
+      </div>
+      <div id="guess6" class="guess" data-letters="">
+        <div class="guess__tile" id="guess6Tile1"></div>
+        <div class="guess__tile" id="guess6Tile2"></div>
+        <div class="guess__tile" id="guess6Tile3"></div>
+        <div class="guess__tile" id="guess6Tile4"></div>
+        <div class="guess__tile" id="guess6Tile5"></div>
+      </div>
+    </section>
+
+    <section class="keyboard-container">
+      <div class="keyboard-row">
+        <button data-key="A">a</button>
+        <button data-key="Z">z</button>
+        <button data-key="E">e</button>
+        <button data-key="R">r</button>
+        <button data-key="T">t</button>
+        <button data-key="Y">Y</button>
+        <button data-key="U">u</button>
+        <button data-key="I">i</button>
+        <button data-key="O">o</button>
+        <button data-key="P">p</button>
+      </div>
+      <div class="keyboard-row">
+        <div class="spacer-half"></div>
+        <button data-key="Q">q</button>
+        <button data-key="S">s</button>
+
+        <button data-key="D">d</button>
+
+        <button data-key="F">f</button>
+
+        <button data-key="G">g</button>
+
+        <button data-key="H">h</button>
+
+        <button data-key="J">J</button>
+
+        <button data-key="K">k</button>
+        <button data-key="L">l</button>
+        <button data-key="M">m</button>
+        <div class="spacer-half"></div>
+      </div>
+      <div class="keyboard-row">
+        <button data-key="enter" class="wide-button">Enter</button>
+        <button data-key="W">w</button>
+        <button data-key="X">x</button>
+        <button data-key="C">c</button>
+        <button data-key="V">v</button>
+        <button data-key="B">b</button>
+        <button data-key="N">n</button>
+        <button data-key="del" class="wide-button">Del</button>
+      </div>
+    </section>
+  </body>
+</html>

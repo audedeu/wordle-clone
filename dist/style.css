@@ -1,0 +1,166 @@
+:root {
+  --font-body: "Open Sans", Arial, sans-serif;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+}
+
+@keyframes flip-in {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(-90deg);
+  }
+}
+@keyframes flip-out {
+  from {
+    transform: rotateX(-90deg);
+  }
+  to {
+    transform: rotateX(0deg);
+  }
+}
+.flip-in {
+  animation: flip-in 250ms;
+  animation-fill-mode: forwards;
+}
+
+.flip-out {
+  animation: flip-out 250ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(rem(-10));
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.jump {
+  animation: jump 250ms;
+  animation-fill-mode: forwards;
+}
+
+html {
+  font-size: 100%;
+  font-family: var(--font-body);
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(240deg, 80%, 21%);
+  color: hsl(0deg, 0%, 91%);
+  border-color: hsl(0deg, 0%, 91%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+h1 {
+  margin-top: 1;
+  line-height: 1.1;
+  font-size: 56px;
+  letter-spacing: 0.2rem;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+.game {
+  padding: 0;
+  max-width: 640px;
+  margin: 0 auto;
+}
+@media (min-width: 1150px) {
+  .game {
+    padding: 0;
+    transform: translate(0, 0);
+  }
+}
+
+/* define primary colors */
+.keyboard-container {
+  height: 200px;
+}
+
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto 8px;
+  touch-action: manipulation;
+}
+
+button {
+  font-family: inherit;
+  font-weight: bold;
+  border: 0;
+  padding: 0;
+  height: 60px;
+  width: 60px;
+  background-color: #a5abac;
+  color: #fff;
+  flex-grow: 1;
+  text-transform: uppercase;
+  margin-right: 6px;
+  border-radius: 4px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.guess {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.guess__tile {
+  border: 2px solid hsl(0deg, 0%, 100%);
+  border-radius: 6px;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 600;
+}
+.guess .has-letter {
+  border-color: hsl(0deg, 0%, 100%);
+}
+.guess .correct {
+  background-color: hsl(7deg, 91%, 44%);
+  border-color: hsl(7deg, 91%, 44%);
+}
+.guess .present {
+  background-color: hsl(49deg, 69%, 47%);
+  border-color: hsl(49deg, 69%, 47%);
+}
+.guess .absent {
+  background-color: hsl(0deg, 0%, 35%);
+  border-color: hsl(0deg, 0%, 35%);
+}
+
+/*# sourceMappingURL=style.css.map */
